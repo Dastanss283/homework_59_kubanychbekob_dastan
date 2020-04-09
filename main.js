@@ -14,3 +14,9 @@ post.addEventListener("click", function(){
 	this.style.color = (this.style.color == 'black') ? '#DCFFEF' : 'black';
 })
 
+function  hideSplashScreen(){
+  let win = document.getElementById("page-splash");
+  let splash = document.getElementById('noscroll');
+  win.style.visibility = "hidden";
+    splash.classList.remove("no-scroll");
+}
